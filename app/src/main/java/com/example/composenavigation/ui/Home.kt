@@ -66,7 +66,7 @@ fun TaskCard(task: String, navController: NavHostController? = null) {
             .wrapContentHeight()
             .padding(top = 8.dp)
             .clickable {
-                navController?.navigate("task")
+                navController?.navigate("task?item=$task")
             }
     ) {
         Row(
